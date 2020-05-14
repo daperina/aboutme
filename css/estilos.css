@@ -8,7 +8,7 @@
 body {
   background-image: url('../img/fundo.jpg');
   background-size: auto 100vh; 
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'Josefin Sans', sans-serif;
   height: 100vh;
   font-size: 12px;
 }
@@ -80,13 +80,13 @@ a:hover {
 
 .site-title {
   font-size: 4em;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Abel', sans-serif;
 }
 
 .site-subtitle {
  font-style: italic;
- font-family: 'Press Start 2P', cursive;
- line-height: 1.8em;
+ font-family: 'Baloo 2', cursive;
+ line-height: 1.0em;
 }
 
 .portfolio {
@@ -95,9 +95,9 @@ a:hover {
 }
 
 .portfolio h2 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   color: whitesmoke;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   font-size: 2em;
 }
 
