@@ -136,3 +136,18 @@ a:hover {
   object-position: left bottom;
 }
 
+.contato {
+  color: whitesmoke;
+
+
+  
+}
+
+.contato ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contato li {
+ list-style: none; 
+}
