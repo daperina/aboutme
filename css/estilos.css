@@ -64,6 +64,7 @@ header {
   transition: background-color.5s, color 0.5s;
 }
 
+.menu a:active,
 .menu a:hover {
   background-color: black;
   color: whitesmoke;
@@ -114,12 +115,22 @@ a:hover {
  line-height: 1.0em;
 }
 
+.sobre,
 .contato,
-.portfolio {s
+.portfolio {
   padding: 2em;
   min height: 100vh;
+  
 }
 
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.sobre h2,
 .contato h2,
 .portfolio h2 {
   font-family: 'Josefin Sans', sans-serif;
@@ -127,6 +138,20 @@ a:hover {
   margin-top: 1em;
   margin-bottom: 1em;
   font-size: 2em;
+}
+
+.sobre p{
+  color: white;
+  margin-bottom: 0.5em;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+.sobre .avatar img {
+  float: right;
+  margin-left: 2em;
+  clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+
 }
 
 .portfolio .grid {
@@ -152,21 +177,56 @@ a:hover {
   }
 }
 
+.flip-card {
+  height: 180px;
+  perspective: 1000px;
+}
+
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 3s;
+}
+
+.card-front, 
+.card-back {
+  backface-visibility: hidden;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.card-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, .7);
+  height: 180px;
+  width: 100%;
+  transform: rotateY(180deg);
+  color: black;
+}
+
 .portfolio figure {
   text-align: center;
 }
 
 .img-portfolio {
   height: 180px;
-  width: 240px;
+  width: 100%;
   object-fit: cover;
   object-position: left bottom;
   transition: transform 500ms;
 }
 
-.img-portfolio:hover {
-  transform: scale(1.05);
-}
+/*.img-portfolio:hover {
+  transform: scale(1.2) rotate(-2deg);
+} */
 
 .contato .icons {
   text-align: center;

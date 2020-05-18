@@ -12,11 +12,11 @@
 <body>
   <header>
 		<nav class="menu">
-			<ul>
-				<li><a href="#">Sobre</a></li>
+			<ul class container>
+				<li><a href="#sobre">Sobre</a></li>
 				<li><a href="#experiencias">Experiências</a></li>
-				<li><a href="#">Formação</a></li>
-				<li><a href="./pages/contato.html">Contato</a></li>
+				<li><a href="#formacao">Formação</a></li>
+				<li><a href="#contato">Contato</a></li>
 			</ul>
 		</nav>
 		<div class="titulo">
@@ -25,27 +25,66 @@
 			<h2 class="site-subtitle">Zootecnista e um pouco de tudo</h2>
 		</div>
   </header>
-  <section class="portfolio" id="experiencias">
-		<h2>Experiências</h2>
+  
+  <section class="sobre container" id="sobre">
+	<h2>Sobre</h2>
+	<figure class="avatar">
+	  <img src="img/code.png"
+	   alt="">
+	
+	</figure>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ea molestiae quo cupiditate veritatis excepturi, aut hic consequatur deserunt, dignissimos suscipit quia deleniti. Neque sunt expedita fugiat, nulla impedit rerum.</p>
 
+	<p>Est velit aliquam rem totam enim vero, esse natus optio corrupti minima nobis facilis sint tenetur saepe iusto blanditiis explicabo, dolore nisi deserunt debitis cumque sit quisquam dolor eaque. Facilis.
+	</p>
+	<p>Blanditiis nesciunt magnam dolor alias laborum possimus, quisquam quia eius hic veniam placeat atque facilis tempora qui porro eaque incidunt a quibusdam id ullam aliquid autem? Eum optio in cupiditate!</p>
+	</section>
+
+
+  <section class="portfolio container" id="experiencias">
+		<h2>Experiências</h2>	
 		<div class="grid">
-			<figure>
-				<img class="img-portfolio" src="./img/zootecnia.png" alt="Zootecnista">
-				<figcaption>Zootecnista</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/icmbio.png" alt=">Servidor público">
-				<figcaption>Servidor público</figcaption>
-			</figure>
-			<figure>
-				<img class="img-portfolio" src="./img/code.png" alt="Desenvolvedor">
-				<figcaption>Desenvolvedor</figcaption>
-			</figure>
+
+			<div class="flip-card">
+				<div class="card">
+					<figure class="card-front">
+					<img class="img-portfolio" src="./img/zootecnia.png" alt="Zootecnista">
+					<figcaption> </figcaption>
+					</figure>
+					<div class="card-back">
+						Zootecnista
+					</div>
+				</div>
+			</div>
+			
+			<div class="flip-card">
+				<div class="card">
+					<figure>
+						<img class="img-portfolio" src="./img/icmbio.png" alt=">Servidor público">
+						<figcaption> </figcaption>
+					</figure>
+					<div class="card-back">
+						Servidor público
+					</div>
+				</div>
+			</div><div class="flip-card">
+				<div class="card">
+					<figure>
+						<img class="img-portfolio" src="./img/code.png" alt="Desenvolvedor">
+						<figcaption> </figcaption>
+					</figure>
+					<div class="card-back">
+						Desenvolvedor
+					</div>
+				</div>
+			</div>
+				
+		
 	
 		</div>
 	</section>
 		
-		<section class="portfolio" id="formacao">
+		<section class="portfolio container" id="formacao">
 		<h2>Formação acadêmica e cursos</h2>
 
 		<div class="grid">
@@ -67,7 +106,7 @@
 	</section>
 
 		
-	<section class="contato" id="contato">
+	<section class="contato container" id="contato">
 		<h2>Contato</h2>
 	
 		<div class="grid icons">
@@ -90,5 +129,6 @@
 			</a>
 		</div>
 	</section>
+<script src="./js/script.js"></script>
 </body>
 </html>
