@@ -194,7 +194,7 @@ a:hover {
 .card {
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 3s;
+  transition: transform 1s;
 }
 
 .card-front, 
@@ -230,7 +230,7 @@ a:hover {
 }
 
 /*.img-portfolio:hover {
-  transform: scale(1.2) rotate(-2deg);
+  transform: scale(1.2) ;
 } */
 
 .contato .icons {
